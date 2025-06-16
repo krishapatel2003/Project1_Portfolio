@@ -1,0 +1,515 @@
+/* boilerplate code */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100vh;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+/* Navebar stayling */
+.nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+}
+.nav-h1 span{
+    color: palegreen;
+}
+.nav-options a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 40px;
+    font-weight: 500;
+}
+
+.nav-options a:hover{
+    color: palegreen;
+    border-bottom: 4px solid black;
+    
+}
+.nav-options .home{
+    color: palegreen;
+}
+
+.nav-options .home:hover{
+    color: black;
+    border-bottom: 4px solid palegreen ;
+}
+.nav-btn button{
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    color: springgreen;
+    background-color: black;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav-btn button:hover{
+    background-color: palegreen;
+    color: black;
+}
+
+
+/* herosection */
+.herosection{
+    /* height: 100px; */
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+}  
+.herosection-left{
+    height: 350px;
+    width: 50%; 
+}
+.herosection-left-1{
+    padding-left: 20px;
+    padding-top: 100px;
+}
+.herosection-left-pera{
+    font-size:25px;
+    padding-bottom: 5px;
+}
+.herosection-left-h1{
+    font-size: 15px;
+    color: palegreen;
+    padding-bottom: 5px;
+}
+.herosection-left-btn{
+    padding-top: 10px;
+}
+.herosection-left-btn button{
+    height:50px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: palegreen;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.herosection-left-btn a{
+    text-decoration: none;
+    color: palegreen;
+}
+
+.herosection-right{
+    height: 350px;
+    width: 50%;
+}
+
+.herosection-right-myimg{
+    padding-top: 20px;
+    padding-left: 70px;
+}
+
+/* About styling */
+.about{
+    height: 300px;
+    width: 100%;
+    display: flex;
+}
+.about-left{
+    height: 250px;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.about-left-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 70px;
+}
+.about-left-box{
+    height: 250px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: palegreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 45px;
+    padding-left: 5px;
+    border: 3px solid black ;
+}
+
+
+.about-right{
+    height: 250px;
+    width: 50%;
+    
+}
+.about-right-h1 h2{
+    display: inline-block;
+    transition: all 0.3s ease;
+    padding-top: 10px;   
+}
+.about-right-h1 h2:hover{
+    color: palegreen;
+    border-bottom: 4px solid black;
+    /* flex-wrap: wrap;   */
+}
+.about-right-pera{
+    font-size: 13px;
+    padding-top: 5px;
+}
+.about-right-skillsANDeeducation{
+    display: flex;
+    gap: 40px;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+.about-right-skills, .about-right-education {
+    cursor: pointer; 
+    width: 100px;
+}
+.about-right-skills{
+    color: black;
+}
+.about-right-skills:hover{
+    color:palegreen;
+    border-bottom: 4px solid black;
+}
+.about-right-education{
+    color: black;
+}
+.about-right-education:hover{
+   color:palegreen;
+    border-bottom: 4px solid black;
+}
+.about-right-list{
+    padding-top: 5px;
+    display: none;
+}
+.about-right-list ul li{
+    padding-top: 5px;
+}
+.about-right-list p{
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+/* services */
+
+.services{
+    height: 330px;
+    width: 100%;
+   
+}
+.services-h1{
+    font-size: 20px;
+    margin-left: 30px;
+}
+.services-boxes{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+.services-box-1{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    color: palegreen;
+    border-radius: 20px;
+
+}
+
+.services-box-1 i{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.services-box-1 h2{
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.services-box-1 p{
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.services-box-1 .learn{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.services-box-2{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    color: palegreen;
+    border-radius: 20px;
+}
+
+.services-box-2 i{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.services-box-2 h2{
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.services-box-2 p{
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.services-box-2 .learn{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.services-box-3{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    color: palegreen;
+    border-radius: 20px;
+
+}
+
+.services-box-3 i{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.services-box-3 h2{
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.services-box-3 p{
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.services-box-3 .learn{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+/* projects */
+
+.projects{
+    height: 200px;
+    width: 100%;
+}
+.projects-h1{
+    font-size: 50px;
+    padding-left: 10px;
+
+}
+ 
+.projects-boxes{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+.projects-box-1{
+    height: 300px;
+    width: 200px;
+    background-color: yellow;
+    background-image: url("portfoliyo1.jpg");
+    background-size: cover;
+    border: 20px solid black;
+    transition:all 0.5s 0.5s ease-in;
+
+}
+.projects-box-1:hover{
+    border: 20px solid palegreen;
+    scale: 1.1;
+
+}
+
+.projects-box-2{
+    height: 300px;
+    width: 200px;
+    background-color: yellow;
+    background-image: url("portfoliyo2.jpeg");
+    background-size: cover;
+    border: 20px solid black;
+    scale: 1.1;
+    transition: border 0.5s 0.5s ease-in;
+}
+.projects-box-2:hover{
+    border: 20px solid palegreen;
+}
+
+.projects-box-3{
+    height: 300px;
+    width: 200px;
+    background-color: yellow;
+    background-image: url("portfoliyo3.jpeg");
+    background-size: cover;
+    border: 20px solid black;
+    transition:all 0.5s 0.5s ease-in;
+}
+
+.projects-box-3:hover{
+    border: 20px solid palegreen;
+    scale: 1.1;
+}
+
+.projects-boxes{
+    display: none;
+}
+
+/* contact */
+.contact{
+    margin-top: 170px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-left{
+    height: 500px;
+    width: 35%;
+}
+.contact-left-h1{
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.contact-left-telegram{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 30px;
+    gap: 5px;
+    
+}
+.contact-left-telegram i{
+    font-size: 20px;
+    color: blue;
+}
+.contact-left-telegram span{
+    font-size: 18px;
+    font-weight: 520;
+}
+
+.contact-left-phone{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 30px;
+    gap: 5px;
+    
+}
+.contact-left-phone i{
+    font-size: 20px;
+    color: rgb(8, 193, 8);
+}
+.contact-left-phone span{
+    font-size: 18px;
+    font-weight: 520;
+}
+
+.contact-left-socialmedia{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+    
+}
+.contact-left-socialmedia i{
+    margin-left: 5px;
+}
+.contsact-left-btn-1 button{
+    height: 50px;
+    width: 250px;
+    background-color: black;
+    color: palegreen;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.contsact-left-btn-1 button:hover{
+    background-color: palegreen;
+    color: black;
+} 
+
+.contact-right{
+    height: 500px;
+    width: 50%;
+    margin-left: 40px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+}
+.input .input1{
+    height: 40px;
+    width: 400px;
+    margin-top: 70px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+.input .input2{
+    height: 40px;
+    width: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+textarea{
+    height: 100px;
+    width: 400px;
+    border: 2px solid black;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.submit-btn button{
+    height: 50px;
+    width: 400px;
+    margin-top: 20px;
+    background-color: black;
+    color: palegreen;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+}
+
+.submit-btn button:hover{
+    background-color: palegreen;
+    color: black;
+    
+}
